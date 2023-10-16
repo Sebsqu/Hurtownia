@@ -1,0 +1,41 @@
+
+    /* Styl dla kontenera produktu */
+    .item {
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 20px auto;
+        width: 600px; /* Dostosuj szerokość do swoich potrzeb */
+        display: block;
+    }
+
+    /* Styl dla nazwy produktu */
+    .name {
+        font-weight: bold;
+    }
+
+    /* Styl dla obrazka */
+    .image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    /* Styl dla przycisku "Dodaj" */
+    .add {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .add:hover {
+        background-color: #0056b3;
+    }
+
+    .cart{
+        text-align: center;
+    }
