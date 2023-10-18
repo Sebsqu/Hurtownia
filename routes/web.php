@@ -50,3 +50,4 @@ Route::get('addram-to-cart/{id}',[RamController::class, 'addToCart7']);
 Route::delete('/cart/remove/{category}/{id}', [CartController::class, 'remove'])->name('cart.remove');
 
 
+
