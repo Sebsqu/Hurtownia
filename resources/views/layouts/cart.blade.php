@@ -18,6 +18,7 @@
 </head>
 <body>
     <div id="app">
+
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-5">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -71,13 +72,19 @@
                 </div>
             </div>
         </nav>
-        <div class="d-flex justify-content-center">
-            <div id="cart_total_value" class="cart">
+
+        <div class="d-flex mb-5 justify-content-center">
+            <div id="cart_total_value" class="cart sum_cart">
                 <h2>Całkowita wartość koszyka:</h2>
                 <h3>{{ $cartTotalValue }} zł</h3>
+                <form action="" method="POST">
+                    <button class="btn btn-success" type="submit">Zamów!</button>
+                </form>
+                
             </div>
         </div>
-        <div class="d-flex mt-5 justify-content-center">
+
+        <div class="d-flex justify-content-center">
             <div id='cart_cases' class='cart'>
                 @if(session('cart_cases'))
                     @foreach (session('cart_cases') as $id => $details)
@@ -184,7 +191,7 @@
                         <h4>{{ $details['fullname'] }}</h4>
                         <h3> </h3>
                         <p>Ilość: {{ $details['quantity'] }}x {{ $details['price'] }} zł</p>
-                        <form action="{{ route('cart.remove', ['category' => 'mbs', 'id' => $id]) }}" method="POST">
+                        <form action="{{ route('cart.remove', ['category' => 'rams', 'id' => $id]) }}" method="POST">
                             @csrf
                             @method('DELETE')
                         <button type="submit" class="btn btn-danger">Usuń</button>
@@ -192,7 +199,8 @@
                     @endforeach
                 @endif    
             </div>
-        </div>      
+        </div> 
+
     </div>
 </body>
 </html>

@@ -36,8 +36,10 @@
         background-color: #0056b3;
     }
 
-    .cart{
+    .sum_cart{
+        padding: 10px;
         text-align: center;
+        border-bottom: 1px solid rgb(0, 0, 0);
     }
 
     .btn-danger {
