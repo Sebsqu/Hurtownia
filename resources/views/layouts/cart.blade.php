@@ -77,7 +77,7 @@
             <div id="cart_total_value" class="cart sum_cart">
                 <h2>Całkowita wartość koszyka:</h2>
                 <h3>{{ $cartTotalValue }} zł</h3>
-                <form action="{{ route('order') }}" method="POST">
+                    <form action="" method="POST">
                     @csrf
                     <button class="btn btn-success" type="submit">Zamów!</button>
                 </form>
