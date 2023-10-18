@@ -11,4 +11,21 @@ class GpuController extends Controller
         $gpus = Gpus::all();
         return view('items.gpuList', ['gpus' => $gpus]);
     }
+    public function addToCart4($id)
+    {
+        $gpu = Gpus::find($id);
+        $cart = session()->get('cart_gpus', []);
+
+        if (isset($cart[$id])) {
+            $cart[$id]['quantity']++;
+        } else {
+            $cart[$id] = [
+                "fullname" => $gpu->gpu_fullname,
+                "price" => $gpu->gpu_price,
+                "quantity" => 1,
+            ];
+        }
+        session()->put('cart_gpus', $cart);
+        return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do koszyka!');
+    }
 }

@@ -9,6 +9,6 @@
         <div class='chipset'>{{ $mb->mb_chipset }}</div>
         <div class='supported_processors'>{{ $mb->mb_supported_processors }}</div>
         <div class='price'>{{ $mb->mb_price }} zł</div>
-        <button class='add' onClick='add("{{ $mb->mb_fullname }}", {{ $mb->mb_price }})'>Dodaj</button>
+        <a href="{{ url('addmb-to-cart/'.$mb->id) }}" class="add">Dodaj</a>
     </div>
 @endforeach

@@ -13,10 +13,10 @@ class CaseController extends Controller
         return view('items.caselist', ['cases' => $cases]);
     }
 
-    public function addToCart($id)
+    public function addToCart1($id)
     {
         $case = Cases::find($id);
-        $cart = session()->get('cart', []);
+        $cart = session()->get('cart_cases', []);
 
         if (isset($cart[$id])) {
             $cart[$id]['quantity']++;
@@ -27,7 +27,7 @@ class CaseController extends Controller
                 "quantity" => 1,
             ];
         }
-        session()->put('cart', $cart);
+        session()->put('cart_cases', $cart);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do koszyka!');
     }
 

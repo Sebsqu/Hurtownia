@@ -10,6 +10,6 @@
         <div class='frequency'>{{ $ram->ram_frequency }}</div>
         <div class='cycle_latency'>{{ $ram->ram_cycle_latency }}</div>
         <div class='price'>{{ $ram->ram_price }} zł</div>
-        <button class='add' onClick='add("{{ $ram->ram_fullname }}", {{ $ram->ram_price }})'>Dodaj</button>
+        <a href="{{ url('addram-to-cart/'.$ram->id) }}" class="add">Dodaj</a>
     </div>
 @endforeach

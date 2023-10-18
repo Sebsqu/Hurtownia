@@ -10,6 +10,6 @@
         <div class='cores'>{{ $cpu->cpu_cores }}</div>
         <div class='graphics'>{{ $cpu->cpu_graphics }}</div>
         <div class='price'>{{ $cpu->cpu_price }} zł</div>
-        <a href="{{ url('add-to-cart/'.$cpu->id) }}" class="add">Dodaj</a>
+        <a href="{{ url('addcpu-to-cart/'.$cpu->id) }}" class="add">Dodaj</a>
     </div>
 @endforeach

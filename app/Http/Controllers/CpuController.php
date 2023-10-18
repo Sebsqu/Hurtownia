@@ -13,21 +13,21 @@ class CpuController extends Controller
         return view('items.cpuList', ['cpus' => $cpus]);
     }
 
-    // public function addToCart($id)
-    // {
-    //     $cpu = Cpus::find($id);
-    //     $cart = session()->get('cart_cpu', []);
+    public function addToCart2($id)
+    {
+        $cpu = Cpus::find($id);
+        $cart = session()->get('cart_cpus', []);
 
-    //     if (isset($cart[$id])) {
-    //         $cart[$id]['quantity']++;
-    //     } else {
-    //         $cart[$id] = [
-    //             "fullname" => $cpu->cpu_fullname,
-    //             "price" => $cpu->cpu_price,
-    //             "quantity" => 1,
-    //         ];
-    //     }
-    //     session()->put('cart_cpu', $cart);
-    //     return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do koszyka!');
-    // }
+        if (isset($cart[$id])) {
+            $cart[$id]['quantity']++;
+        } else {
+            $cart[$id] = [
+                "fullname" => $cpu->cpu_fullname,
+                "price" => $cpu->cpu_price,
+                "quantity" => 1,
+            ];
+        }
+        session()->put('cart_cpus', $cart);
+        return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do koszyka!');
+    }
 }

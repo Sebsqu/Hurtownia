@@ -18,7 +18,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-5">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Hurtownia części komputerowych
@@ -71,17 +71,83 @@
                 </div>
             </div>
         </nav>
-        <div class="mt-5 d-flex justify-content-center">
-            <div id='cart' class='cart'>
-                @if(session('cart'))
-                    @foreach (session('cart') as $id => $details)
+        <div class="d-flex justify-content-center">
+            <div id='cart_cases' class='cart'>
+                @if(session('cart_cases'))
+                    @foreach (session('cart_cases') as $id => $details)
+                        <h4>{{ $details['fullname'] }}</h4>
+                        <h3> {{ $details['price'] }}</h3>
+                        <p>Ilość: {{ $details['quantity'] }}</p>
+                    @endforeach
+                @endif 
+            </div>    
+        </div>
+        <div class="d-flex justify-content-center">           
+            <div id='cart_cpus' class='cart'>
+                @if(session('cart_cpus'))
+                    @foreach (session('cart_cpus') as $id => $details)
                         <h4>{{ $details['fullname'] }}</h4>
                         <h3> {{ $details['price'] }}</h3>
                         <p>Ilość: {{ $details['quantity'] }}</p>
                     @endforeach
                 @endif    
             </div>
-        </div>    
+        </div>
+        <div class="d-flex justify-content-center">           
+            <div id='cart_disks' class='cart'>
+                @if(session('cart_disks'))
+                    @foreach (session('cart_disks') as $id => $details)
+                        <h4>{{ $details['fullname'] }}</h4>
+                        <h3> {{ $details['price'] }}</h3>
+                        <p>Ilość: {{ $details['quantity'] }}</p>
+                    @endforeach
+                @endif    
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">           
+            <div id='cart_gpus' class='cart'>
+                @if(session('cart_gpus'))
+                    @foreach (session('cart_gpus') as $id => $details)
+                        <h4>{{ $details['fullname'] }}</h4>
+                        <h3> {{ $details['price'] }}</h3>
+                        <p>Ilość: {{ $details['quantity'] }}</p>
+                    @endforeach
+                @endif    
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">           
+            <div id='cart_mbs' class='cart'>
+                @if(session('cart_mbs'))
+                    @foreach (session('cart_mbs') as $id => $details)
+                        <h4>{{ $details['fullname'] }}</h4>
+                        <h3> {{ $details['price'] }}</h3>
+                        <p>Ilość: {{ $details['quantity'] }}</p>
+                    @endforeach
+                @endif    
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">           
+            <div id='cart_psus' class='cart'>
+                @if(session('cart_psus'))
+                    @foreach (session('cart_psus') as $id => $details)
+                        <h4>{{ $details['fullname'] }}</h4>
+                        <h3> {{ $details['price'] }}</h3>
+                        <p>Ilość: {{ $details['quantity'] }}</p>
+                    @endforeach
+                @endif    
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">           
+            <div id='cart_rams' class='cart'>
+                @if(session('cart_rams'))
+                    @foreach (session('cart_rams') as $id => $details)
+                        <h4>{{ $details['fullname'] }}</h4>
+                        <h3> {{ $details['price'] }}</h3>
+                        <p>Ilość: {{ $details['quantity'] }}</p>
+                    @endforeach
+                @endif    
+            </div>
+        </div>      
     </div>
 </body>
 </html>

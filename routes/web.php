@@ -38,10 +38,10 @@ Route::get('/showPsu', [PsuController::class, 'showPsu'])->name('showPsu');
 Route::get('/showRam', [RamController::class, 'showRam'])->name('showRam');
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
 
-Route::get('add-to-cart/{id}',[CaseController::class, 'addToCart']);
-// Route::get('add-cpu-to-cart/{id}',[CpuController::class, 'addToCart']);
-// Route::get('add-to-cart/{id}',[DiskController::class, 'addToCart']);
-// Route::get('add-to-cart/{id}',[GpuController::class, 'addToCart']);
-// Route::get('add-to-cart/{id}',[MbController::class, 'addToCart']);
-// Route::get('add-to-cart/{id}',[RamController::class, 'addToCart']);
-// Route::get('add-to-cart/{id}',[PsuController::class, 'addToCart']);
+Route::get('addcase-to-cart/{id}',[CaseController::class, 'addToCart1']);
+Route::get('addcpu-to-cart/{id}',[CpuController::class, 'addToCart2']);
+Route::get('adddisk-to-cart/{id}',[DiskController::class, 'addToCart3']);
+Route::get('addgpu-to-cart/{id}',[GpuController::class, 'addToCart4']);
+Route::get('addmb-to-cart/{id}',[MbController::class, 'addToCart5']);
+Route::get('addpsu-to-cart/{id}',[PsuController::class, 'addToCart6']);
+Route::get('addram-to-cart/{id}',[RamController::class, 'addToCart7']);

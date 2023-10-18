@@ -10,6 +10,6 @@
         <div class='read_speed'>{{ $disk->disk_read_speed }}</div>
         <div class='write_speed'>{{ $disk->disk_write_speed }}</div>
         <div class='price'>{{ $disk->disk_price }} zł</div>
-        <button class='add' onClick='add("{{ $disk->disk_fullname }}", {{ $disk->disk_price }})'>Dodaj</button>
+        <a href="{{ url('adddisk-to-cart/'.$disk->id) }}" class="add">Dodaj</a>
     </div>
 @endforeach

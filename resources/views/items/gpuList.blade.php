@@ -10,6 +10,6 @@
         <div class='timing'>{{ $gpu->gpu_timing }}</div>
         <div class='outputs'>{{ $gpu->gpu_outputs }}</div>
         <div class='price'>{{ $gpu->gpu_price }} zł</div>
-        <button class='add' onClick='add("{{ $gpu->gpu_fullname }}", {{ $gpu->gpu_price }})'>Dodaj</button>
+        <a href="{{ url('addgpu-to-cart/'.$gpu->id) }}" class="add">Dodaj</a>
     </div>
 @endforeach

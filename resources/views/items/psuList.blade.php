@@ -9,6 +9,6 @@
         <div class='efficiency'>{{ $psu->psu_efficiency }}</div>
         <div class='certificate'>{{ $psu->psu_certificate }}</div>
         <div class='price'>{{ $psu->psu_price }} zł</div>
-        <button class='add' onClick='add("{{ $psu->psu_fullname }}", {{ $psu->psu_price }})'>Dodaj</button>
+        <a href="{{ url('addpsu-to-cart/'.$psu->id) }}" class="add">Dodaj</a>
     </div>
 @endforeach
