@@ -72,12 +72,24 @@
             </div>
         </nav>
         <div class="d-flex justify-content-center">
+            <div id="cart_total_value" class="cart">
+                <h2>Całkowita wartość koszyka:</h2>
+                <h3>{{ $cartTotalValue }} zł</h3>
+            </div>
+        </div>
+        <div class="d-flex mt-5 justify-content-center">
             <div id='cart_cases' class='cart'>
                 @if(session('cart_cases'))
                     @foreach (session('cart_cases') as $id => $details)
+                        <hr>
                         <h4>{{ $details['fullname'] }}</h4>
-                        <h3> {{ $details['price'] }}</h3>
-                        <p>Ilość: {{ $details['quantity'] }}</p>
+                        <p> Ilość: {{ $details['quantity'] }}x {{ $details['price'] }} zł</p>
+                        <form action="{{ route('cart.remove', ['category' => 'cases', 'id' => $id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Usuń</button>
+                        </form>
+                        <hr>
                     @endforeach
                 @endif 
             </div>    
@@ -86,9 +98,14 @@
             <div id='cart_cpus' class='cart'>
                 @if(session('cart_cpus'))
                     @foreach (session('cart_cpus') as $id => $details)
+                        <hr>
                         <h4>{{ $details['fullname'] }}</h4>
-                        <h3> {{ $details['price'] }}</h3>
-                        <p>Ilość: {{ $details['quantity'] }}</p>
+                        <p>Ilość: {{ $details['quantity'] }}x {{ $details['price'] }} zł</p>
+                        <form action="{{ route('cart.remove', ['category' => 'cpus', 'id' => $id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Usuń</button>
+                        <hr>
                     @endforeach
                 @endif    
             </div>
@@ -97,9 +114,14 @@
             <div id='cart_disks' class='cart'>
                 @if(session('cart_disks'))
                     @foreach (session('cart_disks') as $id => $details)
+                        <hr>
                         <h4>{{ $details['fullname'] }}</h4>
-                        <h3> {{ $details['price'] }}</h3>
-                        <p>Ilość: {{ $details['quantity'] }}</p>
+                        <p>Ilość: {{ $details['quantity'] }}x {{ $details['price'] }} zł</p>
+                        <form action="{{ route('cart.remove', ['category' => 'disks', 'id' => $id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Usuń</button>
+                        <hr>
                     @endforeach
                 @endif    
             </div>
@@ -108,9 +130,14 @@
             <div id='cart_gpus' class='cart'>
                 @if(session('cart_gpus'))
                     @foreach (session('cart_gpus') as $id => $details)
+                        <hr>
                         <h4>{{ $details['fullname'] }}</h4>
-                        <h3> {{ $details['price'] }}</h3>
-                        <p>Ilość: {{ $details['quantity'] }}</p>
+                        <p>Ilość: {{ $details['quantity'] }}x {{ $details['price'] }} zł</p>
+                        <form action="{{ route('cart.remove', ['category' => 'gpus', 'id' => $id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Usuń</button>
+                        <hr>
                     @endforeach
                 @endif    
             </div>
@@ -119,9 +146,15 @@
             <div id='cart_mbs' class='cart'>
                 @if(session('cart_mbs'))
                     @foreach (session('cart_mbs') as $id => $details)
+                        <hr>
                         <h4>{{ $details['fullname'] }}</h4>
-                        <h3> {{ $details['price'] }}</h3>
-                        <p>Ilość: {{ $details['quantity'] }}</p>
+                        <h3> </h3>
+                        <p>Ilość: {{ $details['quantity'] }}x {{ $details['price'] }} zł</p>
+                        <form action="{{ route('cart.remove', ['category' => 'mbs', 'id' => $id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Usuń</button>
+                        <hr>
                     @endforeach
                 @endif    
             </div>
@@ -130,9 +163,15 @@
             <div id='cart_psus' class='cart'>
                 @if(session('cart_psus'))
                     @foreach (session('cart_psus') as $id => $details)
+                        <hr>
                         <h4>{{ $details['fullname'] }}</h4>
-                        <h3> {{ $details['price'] }}</h3>
-                        <p>Ilość: {{ $details['quantity'] }}</p>
+                        <h3> </h3>
+                        <p>Ilość: {{ $details['quantity'] }}x {{ $details['price'] }} zł</p>
+                        <form action="{{ route('cart.remove', ['category' => 'psus', 'id' => $id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Usuń</button>
+                        <hr>
                     @endforeach
                 @endif    
             </div>
@@ -141,9 +180,15 @@
             <div id='cart_rams' class='cart'>
                 @if(session('cart_rams'))
                     @foreach (session('cart_rams') as $id => $details)
+                        <hr>
                         <h4>{{ $details['fullname'] }}</h4>
-                        <h3> {{ $details['price'] }}</h3>
-                        <p>Ilość: {{ $details['quantity'] }}</p>
+                        <h3> </h3>
+                        <p>Ilość: {{ $details['quantity'] }}x {{ $details['price'] }} zł</p>
+                        <form action="{{ route('cart.remove', ['category' => 'mbs', 'id' => $id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Usuń</button>
+                        <hr>
                     @endforeach
                 @endif    
             </div>
@@ -151,3 +196,10 @@
     </div>
 </body>
 </html>
+<script>
+    $(document).ready(function() {
+        $.get('{{ route('cart.total-value') }}', function(data) {
+            $('#total-value').text(data + ' zł');
+        });
+    });
+</script>

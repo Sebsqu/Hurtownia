@@ -37,6 +37,7 @@ Route::get('/showMb', [MbController::class, 'showMb'])->name('showMb');
 Route::get('/showPsu', [PsuController::class, 'showPsu'])->name('showPsu');
 Route::get('/showRam', [RamController::class, 'showRam'])->name('showRam');
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
+Route::get('/cart/total-value', [CartController::class, 'calculateTotalValue'])->name('cart.total-value');
 
 Route::get('addcase-to-cart/{id}',[CaseController::class, 'addToCart1']);
 Route::get('addcpu-to-cart/{id}',[CpuController::class, 'addToCart2']);
@@ -45,3 +46,7 @@ Route::get('addgpu-to-cart/{id}',[GpuController::class, 'addToCart4']);
 Route::get('addmb-to-cart/{id}',[MbController::class, 'addToCart5']);
 Route::get('addpsu-to-cart/{id}',[PsuController::class, 'addToCart6']);
 Route::get('addram-to-cart/{id}',[RamController::class, 'addToCart7']);
+
+Route::delete('/cart/remove/{category}/{id}', [CartController::class, 'remove'])->name('cart.remove');
+
+

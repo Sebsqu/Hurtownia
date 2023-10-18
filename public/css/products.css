@@ -39,3 +39,11 @@
     .cart{
         text-align: center;
     }
+
+    .btn-danger {
+        margin-top: -10px;
+    }
+
+    hr{
+        width: 500px;
+    }
