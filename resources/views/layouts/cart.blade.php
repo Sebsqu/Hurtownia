@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Hurtownia części komputerowych') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -56,6 +56,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" id="order" href="{{ route('order') }}">Zamówienia</a>
+                                    <a class="dropdown-item" id="cart" href="{{ route('cart') }}">Koszyk</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -76,7 +78,7 @@
         <div class="d-flex mb-2 justify-content-center">
             <div id="cart_total_value" class="cart sum_cart">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 align-self-center">
                         <h2>Całkowita wartość koszyka:</h2>
                         <h3>{{ $cartTotalValue }} zł</h3>
                     </div>
@@ -94,12 +96,12 @@
                             <div class="form-group">
                                 <label for="payment_method">Metoda płatności</label>
                                 <select class="form-control" id="payment_method" name="payment_method">
-                                    <option value="credit_card">Karta kredytowa</option>
-                                    <option value="paypal">PayPal</option>
-                                    <option value="bank_transfer">Przelew bankowy</option>
+                                    <option value="Credit card">Karta kredytowa</option>
+                                    <option value="Paypal">PayPal</option>
+                                    <option value="Bank transfer">Przelew bankowy</option>
                                 </select>
                             </div>
-                            <button class="btn btn-success" type="submit">Zamów!</button>
+                            <button class="btn btn-success mt-2" type="submit">Zamów!</button>
                         </form>
                     </div>
                 </div>

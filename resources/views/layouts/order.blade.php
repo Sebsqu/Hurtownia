@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Hurtownia części komputerowych') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -75,20 +75,30 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            @foreach ($orders as $order)
+            <div class="order container">
+                <div class="order-item">
+                    <p><strong>Produkty:</strong></p>
+                    <p>{{ $order['items'] }}</p>
+                </div>
+
+                <div class="order-item">
+                    <p><strong>Suma:</strong></p>
+                    <p>{{ $order['total_amount'] }}</p>
+                </div>
+
+                <div class="order-item">
+                    <p><strong>Data zamówienia:</strong></p>
+                    <p>{{ $order['order_time'] }}</p>
+                </div>
+
+                <div class="order-item">
+                    <p><strong>Metoda płatności:</strong></p>
+                    <p>{{ $order['payment_method'] }}</p>
+                </div>
+            </div>
+            @endforeach
         </main>
     </div>
 </body>
 </html>
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-
-$(document).ready(function() {
-    $('#cart').click(function() {
-        var url = $(this).data('url');
-        window.location.href = url;
-    });
-});
-</script>

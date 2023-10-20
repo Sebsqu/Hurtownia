@@ -10,6 +10,7 @@ use App\Http\Controllers\MbController;
 use App\Http\Controllers\PsuController;
 use App\Http\Controllers\RamController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +23,6 @@ use App\Http\Controllers\CartController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('welcome');
@@ -36,8 +33,7 @@ Route::get('/showGpu', [GpuController::class, 'showGpu'])->name('showGpu');
 Route::get('/showMb', [MbController::class, 'showMb'])->name('showMb');
 Route::get('/showPsu', [PsuController::class, 'showPsu'])->name('showPsu');
 Route::get('/showRam', [RamController::class, 'showRam'])->name('showRam');
-Route::get('/cart', [CartController::class, 'index'])->name('cart');
-Route::get('/cart/total-value', [CartController::class, 'calculateTotalValue'])->name('cart.total-value');
+Route::get('/orders', [OrderController::class, 'index'])->name('order');
 
 Route::get('addcase-to-cart/{id}',[CaseController::class, 'addToCart1']);
 Route::get('addcpu-to-cart/{id}',[CpuController::class, 'addToCart2']);
@@ -47,8 +43,10 @@ Route::get('addmb-to-cart/{id}',[MbController::class, 'addToCart5']);
 Route::get('addpsu-to-cart/{id}',[PsuController::class, 'addToCart6']);
 Route::get('addram-to-cart/{id}',[RamController::class, 'addToCart7']);
 
-Route::delete('/cart/remove/{category}/{id}', [CartController::class, 'remove'])->name('cart.remove');
 
+Route::get('/cart', [CartController::class, 'index'])->name('cart');
+Route::get('/cart/total-value', [CartController::class, 'calculateTotalValue'])->name('cart.total-value');
+Route::delete('/cart/remove/{category}/{id}', [CartController::class, 'remove'])->name('cart.remove');
 Route::post('cart/checkout', [CartController::class, 'checkout'])->name('cart.checkout');
 Route::get('cart/confirmation', [CartController::class, 'confirmation'])->name('cart.confirmation');
 

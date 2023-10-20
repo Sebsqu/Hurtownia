@@ -31,6 +31,16 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+        $.ajax({
+            type: 'GET',
+            url: '{{ route('showCases') }}',
+            success: function(data) {
+                $('#itemsContainer').html(data);
+            }
+        });
+});
+
+$(document).ready(function() {
     $('#loadCpus').click(function() {
         $.ajax({
             type: 'GET',

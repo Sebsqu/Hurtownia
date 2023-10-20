@@ -13,7 +13,7 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger('id_user')->nullable();
             $table->text('items');
             $table->decimal('total_amount', 10, 2);
-            $table->timestamp('order_time');
+            $table->datetime('order_time');
             $table->string('name');
             $table->text('address');
             $table->string('payment_method');
