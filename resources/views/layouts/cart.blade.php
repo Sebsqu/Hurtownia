@@ -85,11 +85,11 @@
                             @csrf
                             <div class="form-group">
                                 <label for="name">Imię i Nazwisko</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             <div class="form-group">
                                 <label for="address">Adres dostawy</label>
-                                <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="payment_method">Metoda płatności</label>
