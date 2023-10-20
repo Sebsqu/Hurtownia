@@ -26,6 +26,7 @@ use App\Http\Controllers\OrderController;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('welcome');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('welcome');
 Route::get('/showCases', [CaseController::class, 'showCases'])->name('showCases');
 Route::get('/showCpu', [CpuController::class, 'showCpu'])->name('showCpu');
 Route::get('/showDisk', [DiskController::class, 'showDisk'])->name('showDisk');
@@ -43,13 +44,12 @@ Route::get('addmb-to-cart/{id}',[MbController::class, 'addToCart5']);
 Route::get('addpsu-to-cart/{id}',[PsuController::class, 'addToCart6']);
 Route::get('addram-to-cart/{id}',[RamController::class, 'addToCart7']);
 
-
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
 Route::get('/cart/total-value', [CartController::class, 'calculateTotalValue'])->name('cart.total-value');
 Route::delete('/cart/remove/{category}/{id}', [CartController::class, 'remove'])->name('cart.remove');
 Route::post('cart/checkout', [CartController::class, 'checkout'])->name('cart.checkout');
 Route::get('cart/confirmation', [CartController::class, 'confirmation'])->name('cart.confirmation');
 
-
+Route::get('/orders2', [OrderController::class, 'sellerIndex'])->name('order2');
 
 

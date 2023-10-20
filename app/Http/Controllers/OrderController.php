@@ -10,8 +10,22 @@ class OrderController extends Controller
     public function index()
     {
         $userId = auth()->user()->id;
-        $orders = Order::where('id_user', $userId)->get(); // Pobierz wszystkie zamówienia użytkownika
+        $orders = Order::where('id_user', $userId)->get();
         return view('layouts.order', ['orders' => $orders]);
+    }
+
+    public function sellerIndex()
+    {
+        if(auth()->user()->role_id == 3)
+        {
+            $orders2 = Order::All();
+            return view('layouts.orders', ['orders2' => $orders2]);
+        }
+        else
+        {
+            return abort(403);
+        }
+        
     }
 
 }
