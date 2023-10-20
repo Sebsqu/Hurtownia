@@ -49,5 +49,9 @@ Route::get('addram-to-cart/{id}',[RamController::class, 'addToCart7']);
 
 Route::delete('/cart/remove/{category}/{id}', [CartController::class, 'remove'])->name('cart.remove');
 
+Route::post('cart/checkout', [CartController::class, 'checkout'])->name('cart.checkout');
+Route::get('cart/confirmation', [CartController::class, 'confirmation'])->name('cart.confirmation');
+
+
 
 

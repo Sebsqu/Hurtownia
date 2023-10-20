@@ -19,7 +19,7 @@
 <body>
     <div id="app">
 
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-5">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-2">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Hurtownia części komputerowych
@@ -73,18 +73,39 @@
             </div>
         </nav>
 
-        <div class="d-flex mb-5 justify-content-center">
+        <div class="d-flex mb-2 justify-content-center">
             <div id="cart_total_value" class="cart sum_cart">
-                <h2>Całkowita wartość koszyka:</h2>
-                <h3>{{ $cartTotalValue }} zł</h3>
-                    <form action="" method="POST">
-                    @csrf
-                    <button class="btn btn-success" type="submit">Zamów!</button>
-                </form>
-
-                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Całkowita wartość koszyka:</h2>
+                        <h3>{{ $cartTotalValue }} zł</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="{{ route('cart.checkout') }}" method="POST">
+                            @csrf
+                            <div class="form-group">
+                                <label for="name">Imię i Nazwisko</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Adres dostawy</label>
+                                <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="payment_method">Metoda płatności</label>
+                                <select class="form-control" id="payment_method" name="payment_method">
+                                    <option value="credit_card">Karta kredytowa</option>
+                                    <option value="paypal">PayPal</option>
+                                    <option value="bank_transfer">Przelew bankowy</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-success" type="submit">Zamów!</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+
 
         <div class="d-flex justify-content-center">
             <div id='cart_cases' class='cart'>
