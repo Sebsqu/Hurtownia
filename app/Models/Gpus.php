@@ -10,7 +10,7 @@ class Gpus extends Model
     use HasFactory;
 
     protected $table = 'gpu';
-    protected $filleable = [
+    protected $fillable = [
         'gpu_fullname',
         'gpu_connector',
         'gpu_memory',

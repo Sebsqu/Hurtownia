@@ -24,6 +24,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 770',
             'cpu_price' =>  3099.00, 
             'cpu_image_path' => 'images/cpu/cpu1.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -35,6 +37,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  2999.00, 
             'cpu_image_path' => 'images/cpu/cpu2.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
          DB::table('cpu')->insert([
@@ -46,6 +50,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 770',
             'cpu_price' =>  2299.00, 
             'cpu_image_path' => 'images/cpu/cpu3.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -57,6 +63,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  2199.00, 
             'cpu_image_path' => 'images/cpu/cpu4.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -68,6 +76,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 750',
             'cpu_price' =>  1899.00, 
             'cpu_image_path' => 'images/cpu/cpu5.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -79,6 +89,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  1799.00, 
             'cpu_image_path' => 'images/gpu/gpu6.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -90,6 +102,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 770',
             'cpu_price' =>  2249.00, 
             'cpu_image_path' => 'images/cpu/cpu7.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
          DB::table('cpu')->insert([
@@ -101,6 +115,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  2129.00, 
             'cpu_image_path' => 'images/cpu/cpu8.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -112,6 +128,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 770',
             'cpu_price' =>  1899.00, 
             'cpu_image_path' => 'images/cpu/cpu9.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -123,6 +141,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  1799.00, 
             'cpu_image_path' => 'images/cpu/cpu10.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -134,6 +154,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 750',
             'cpu_price' =>  1549.00, 
             'cpu_image_path' => 'images/cpu/cpu11.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -145,6 +167,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  1539.00, 
             'cpu_image_path' => 'images/cpu/cpu12.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
          DB::table('cpu')->insert([
@@ -156,6 +180,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 770',
             'cpu_price' =>  1679.00, 
             'cpu_image_path' => 'images/cpu/cpu13.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -167,6 +193,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  1559.00, 
             'cpu_image_path' => 'images/cpu/cpu14.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -178,6 +206,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 770',
             'cpu_price' =>  1299.00, 
             'cpu_image_path' => 'images/cpu/cpu15.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -189,6 +219,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  1199.00, 
             'cpu_image_path' => 'images/cpu/cpu16.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -200,6 +232,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 750',
             'cpu_price' =>  1149.00, 
             'cpu_image_path' => 'images/cpu/cpu17.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
          DB::table('cpu')->insert([
@@ -211,6 +245,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  1049.00, 
             'cpu_image_path' => 'images/cpu/cpu18.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -222,6 +258,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 730',
             'cpu_price' =>  749.00, 
             'cpu_image_path' => 'images/cpu/cpu19.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -233,6 +271,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 730',
             'cpu_price' =>  659.00, 
             'cpu_image_path' => 'images/cpu/cpu20.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -244,6 +284,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 630',
             'cpu_price' =>  519.00, 
             'cpu_image_path' => 'images/cpu/cpu21.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -255,6 +297,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Radeon Graphics',
             'cpu_price' =>  2239.00, 
             'cpu_image_path' => 'images/cpu/cpu22.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
          DB::table('cpu')->insert([
@@ -266,6 +310,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Radeon Graphics',
             'cpu_price' =>  2299.00, 
             'cpu_image_path' => 'images/cpu/cpu23.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -277,6 +323,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Intel UHD Graphics 630',
             'cpu_price' =>  1699.00, 
             'cpu_image_path' => 'images/cpu/cpu24.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -288,6 +336,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Radeon Graphics',
             'cpu_price' =>  1779.00, 
             'cpu_image_path' => 'images/cpu/cpu25.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -299,6 +349,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  1679.00, 
             'cpu_image_path' => 'images/cpu/cpu26.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -310,6 +362,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  939.00, 
             'cpu_image_path' => 'images/cpu/cpu27.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
          DB::table('cpu')->insert([
@@ -321,6 +375,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Radeon Graphics',
             'cpu_price' =>  1199.00, 
             'cpu_image_path' => 'images/cpu/cpu28.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -332,6 +388,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Radeon Graphics',
             'cpu_price' =>  1229.00, 
             'cpu_image_path' => 'images/cpu/cpu29.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -343,6 +401,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  869.00, 
             'cpu_image_path' => 'images/cpu/cpu30.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -354,6 +414,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  709.00, 
             'cpu_image_path' => 'images/cpu/cpu31.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -365,6 +427,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  459.00, 
             'cpu_image_path' => 'images/cpu/cpu32.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
          DB::table('cpu')->insert([
@@ -376,6 +440,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Radeon Graphics',
             'cpu_price' =>  499.00, 
             'cpu_image_path' => 'images/cpu/cpu33.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -387,6 +453,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Brak',
             'cpu_price' =>  329.00, 
             'cpu_image_path' => 'images/cpu/cpu34.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('cpu')->insert([
@@ -398,6 +466,8 @@ class CpuDataSeeder extends Seeder
             'cpu_graphics' => 'Radeon RX Vega 8',
             'cpu_price' =>  429.00, 
             'cpu_image_path' => 'images/cpu/cpu35.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
         
     }

@@ -10,7 +10,7 @@ class Psus extends Model
     use HasFactory;
 
     protected $table = 'psu';
-    protected $filleable = [
+    protected $fillable = [
         'psu_fullname',
         'psu_power',
         'psu_standard',

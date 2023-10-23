@@ -29,4 +29,62 @@ class PsuController extends Controller
         session()->put('cart_psus', $cart);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do koszyka!');
     }
+
+    public function addPsu(Request $request)
+    {
+        
+        $data = [
+            'psu_fullname'=>$request->psu_fullname,
+            'psu_power'=>$request->psu_power,
+            'psu_standard'=>$request->psu_standard,
+            'psu_efficiency'=>$request->psu_efficiency,
+            'psu_certificate'=>$request->psu_certificate,
+            'psu_price'=>(float)$request->psu_price,
+            'psu_image_path'=>$request->psu_image_path,
+        ];
+        Psus::create($data);
+        return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do bazy!');
+    }
+
+    public function showPsus2()
+    {
+        $psus = Psus::all();
+        return view('items.edit.psuList2', ['psus' => $psus]);
+    }
+
+    public function editPsu($id)
+    {
+        $psu = Psus::find($id);
+        return view('items.edit.editPsuList', ['psu' => $psu]);
+    }
+
+    public function updatePsu(Request $request, $id)
+    {
+        $psu = Psus::find($id);
+
+        $data = [
+            'psu_fullname' => $request->input('psu_fullname'),
+            'psu_power' => $request->input('psu_power'),
+            'psu_standard' => $request->input('psu_standard'),
+            'psu_efficiency' => $request->input('psu_efficiency'),
+            'psu_certificate' => $request->input('psu_certificate'),
+            'psu_price' => (float) $request->input('psu_price'),
+            'psu_image_path' => $request->input('psu_image_path'),
+        ];
+
+        $psu->update($data);
+        return redirect('/')->with('success', 'Dysk został zaktualizowany!');
+    }
+
+    public function destroy($id)
+    {
+        $psu = Psus::find($id);
+        if (!$psu) {
+            return redirect('/');
+        }
+
+        $psu->delete();
+        return redirect('/');
+    }
+
 }

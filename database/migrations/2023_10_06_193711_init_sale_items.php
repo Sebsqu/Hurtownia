@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('case', function(Blueprint $table)
+        Schema::create('cases', function(Blueprint $table)
         {
             $table->id();
             $table->string('case_fullname', 100)->nullable(false);
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('case_side_panel', 50)->nullable(false);
             $table->decimal('case_price', 10, 2)->nullable(false);
             $table->string('case_image_path', 100)->nullable(false);
+            $table->timestamps();
         });
         (new \Database\Seeders\CaseDataSeeder())->run();
 
@@ -37,6 +38,7 @@ return new class extends Migration
             $table->string('cpu_graphics', 50)->nullable(false);
             $table->decimal('cpu_price', 10, 2)->nullable(false);
             $table->string('cpu_image_path', 100)->nullable(false);
+            $table->timestamps();
         });
         (new \Database\Seeders\CpuDataSeeder())->run();
 
@@ -51,6 +53,7 @@ return new class extends Migration
             $table->string('disk_write_speed', 50)->nullable(false);
             $table->decimal('disk_price', 10, 2)->nullable(false);
             $table->string('disk_image_path', 100)->nullable(false);
+            $table->timestamps();
         });
         (new \Database\Seeders\DiskDataSeeder())->run();
 
@@ -66,6 +69,7 @@ return new class extends Migration
             $table->string('gpu_outputs', 50)->nullable(false);
             $table->decimal('gpu_price', 10, 2)->nullable(false);
             $table->string('gpu_image_path', 100)->nullable(false);
+            $table->timestamps();
         });
         (new \Database\Seeders\GpuDataSeeder())->run();
 
@@ -79,6 +83,7 @@ return new class extends Migration
             $table->string('mb_supported_processors', 100)->nullable(false);
             $table->decimal('mb_price', 10, 2)->nullable(false);
             $table->string('mb_image_path', 100)->nullable(false);
+            $table->timestamps();
         });
         (new \Database\Seeders\MotherboardDataSeeder())->run();
 
@@ -92,6 +97,7 @@ return new class extends Migration
             $table->string('psu_certificate', 50)->nullable(false);
             $table->decimal('psu_price', 10, 2)->nullable(false);
             $table->string('psu_image_path', 100)->nullable(false);
+            $table->timestamps();
         });
         (new \Database\Seeders\PsuDataSeeder())->run();
 
@@ -106,6 +112,7 @@ return new class extends Migration
             $table->string('ram_cycle_latency', 10, 2)->nullable(false);
             $table->decimal('ram_price', 10, 2)->nullable(false);
             $table->string('ram_image_path', 100)->nullable(false);
+            $table->timestamps();
         });
         (new \Database\Seeders\RamDataSeeder())->run();
     }
@@ -117,7 +124,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('case');
+        Schema::dropIfExists('cases');
         Schema::dropIfExists('cpu');
         Schema::dropIfExists('disk');
         Schema::dropIfExists('gpu');

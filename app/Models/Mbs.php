@@ -10,7 +10,7 @@ class Mbs extends Model
     use HasFactory;
 
     protected $table = 'motherboard';
-    protected $filleable = [
+    protected $fillable = [
         'mb_fullname',
         'mb_format',
         'mb_socket',

@@ -24,6 +24,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '3000 MB/s',
             'disk_price' =>  219.00, 
             'disk_image_path' => 'images/disk/disk1.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -35,6 +37,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '2600 MB/s',
             'disk_price' =>  159.00, 
             'disk_image_path' => 'images/disk/disk2.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -46,6 +50,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '500 MB/s',
             'disk_price' =>  109.00, 
             'disk_image_path' => 'images/disk/disk3.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -57,6 +63,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '530 MB/s',
             'disk_price' =>  189.00, 
             'disk_image_path' => 'images/disk/disk4.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -68,6 +76,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '5000 MB/s',
             'disk_price' => 399.00, 
             'disk_image_path' => 'images/disk/disk5.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -79,6 +89,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '540 MB/s',
             'disk_price' =>  115.00, 
             'disk_image_path' => 'images/disk/disk6.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -90,6 +102,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '500 MB/s',
             'disk_price' =>  69.00, 
             'disk_image_path' => 'images/disk/disk7.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -101,6 +115,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '6300 MB/s',
             'disk_price' =>  339.00, 
             'disk_image_path' => 'images/disk/disk8.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -112,6 +128,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '500 MB/s',
             'disk_price' =>  119.00, 
             'disk_image_path' => 'images/disk/disk9.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -123,6 +141,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '3000 MB/s',
             'disk_price' =>  239.00, 
             'disk_image_path' => 'images/disk/disk10.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -134,6 +154,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '-----',
             'disk_price' =>  245.00, 
             'disk_image_path' => 'images/disk/disk11.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('disk')->insert([
@@ -145,6 +167,8 @@ class DiskDataSeeder extends Seeder
             'disk_write_speed' => '-----',
             'disk_price' => 189.00 , 
             'disk_image_path' => 'images/disk/disk12.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }

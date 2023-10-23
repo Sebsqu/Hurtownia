@@ -10,7 +10,7 @@ class Rams extends Model
     use HasFactory;
 
     protected $table = 'ram';
-    protected $filleable = [
+    protected $fillable = [
         'ram_fullname',
         'ram_type_of_memory',
         'ram_total_capacity',

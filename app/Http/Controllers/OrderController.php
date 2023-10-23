@@ -16,16 +16,15 @@ class OrderController extends Controller
 
     public function sellerIndex()
     {
-        if(auth()->user()->role_id == 3)
+        if(auth()->user()->role_id == 2)
         {
             $orders2 = Order::All();
-            return view('layouts.orders', ['orders2' => $orders2]);
+            return view('seller.orders', ['orders2' => $orders2]);
         }
         else
         {
             return abort(403);
         }
-        
     }
 
 }

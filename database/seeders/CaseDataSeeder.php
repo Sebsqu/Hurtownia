@@ -16,7 +16,7 @@ class CaseDataSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'be quiet! Pure Base 500DX Black',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, m-ATX, Mini-ITX',
@@ -24,9 +24,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 569.00 , 
             'case_image_path' => 'images/case/case1.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'KRUX Vako',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, m-ATX, microATX',
@@ -34,9 +36,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 239.00 ,
             'case_image_path' => 'images/case/case2.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'ENDORFY Regnum 400 ARGB',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, microATX, ITX',
@@ -44,9 +48,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 469.00,
             'case_image_path' => 'images/case/case3.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'SilentiumPC Armis AR1',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, microATX, Mini-ITX',
@@ -54,9 +60,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Brak szkła hartowanego',
             'case_price' => 159.00,
             'case_image_path' => 'images/case/case4.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'ENDORFY Signum 300 Air',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, microATX, ITX',
@@ -64,9 +72,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 329.00,
             'case_image_path' => 'images/case/case5.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'Lian Li Lancool III Black',
             'case_type' => 'Big Tower',
             'case_standard' => 'ATX, microARX, Mini-ITX, EATX',
@@ -74,9 +84,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 749.00,
             'case_image_path' => 'images/case/case6.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'Corsair 4000D Airflow White',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, microATX, Mini-ITX, EATX',
@@ -84,9 +96,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 479.00,
             'case_image_path' => 'images/case/case7.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'Lian Li O11 Air Mini Black',
             'case_type' => 'Mini Tower',
             'case_standard' => 'ATX, microATX, Mini-ITX, EATX',
@@ -94,9 +108,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 549.00,
             'case_image_path' => 'images/case/case8.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'be quiet! Pure Base 500FX',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, m-ATX, Mini-ITX',
@@ -104,9 +120,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 699.00,
             'case_image_path' => 'images/case/case9.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'Kolink Void RGB White',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, microATX, Mini-ITX',
@@ -114,9 +132,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 279.00,
             'case_image_path' => 'images/case/case10.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'MSI MAG Forge 111R',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, m-ATX, ITX',
@@ -124,9 +144,11 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 299.00,
             'case_image_path' => 'images/case/case11.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
-        DB::table('case')->insert([
+        DB::table('cases')->insert([
             'case_fullname' => 'Zalman S3',
             'case_type' => 'Middle Tower',
             'case_standard' => 'ATX, m-ATX, Mini-ITX',
@@ -134,6 +156,8 @@ class CaseDataSeeder extends Seeder
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 299.00,
             'case_image_path' => 'images/case/case12.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }

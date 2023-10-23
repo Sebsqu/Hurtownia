@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function addItems(){
+        return view('seller.addLayout');
+    }
+
+    public function editItemsShow()
+    {
+        return view('seller.editLayout');
+    }
 }

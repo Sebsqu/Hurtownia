@@ -9,7 +9,7 @@ class Cases extends Model
 {
     use HasFactory;
 
-    protected $table = 'case';
+    protected $table = 'cases';
     protected $fillable = [
         'case_fullname',
         'case_type',

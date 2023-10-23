@@ -23,6 +23,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  499.00, 
             'psu_image_path' => 'images/psu/psu1.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -33,6 +35,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  499.00, 
             'psu_image_path' => 'images/psu/psu2.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -43,6 +47,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  499.00, 
             'psu_image_path' => 'images/psu/psu3.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -53,6 +59,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  459.00, 
             'psu_image_path' => 'images/psu/psu4.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -63,6 +71,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  459.00, 
             'psu_image_path' => 'images/psu/psu5.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -73,6 +83,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  319.00, 
             'psu_image_path' => 'images/psu/psu6.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -83,6 +95,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  319.00, 
             'psu_image_path' => 'images/psu/psu7.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -93,6 +107,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => 'Nie certyfikowany',
             'psu_price' => 319.00, 
             'psu_image_path' => 'images/psu/psu8.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -103,6 +119,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  299.00, 
             'psu_image_path' => 'images/psu/psu9.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -113,6 +131,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  299.00, 
             'psu_image_path' => 'images/psu/psu10.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -123,6 +143,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  299.00, 
             'psu_image_path' => 'images/psu/psu11.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -133,6 +155,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  299.00, 
             'psu_image_path' => 'images/psu/psu12.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -143,6 +167,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Silver',
             'psu_price' =>  299.00, 
             'psu_image_path' => 'images/psu/psu13.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -153,6 +179,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' => 289.00, 
             'psu_image_path' => 'images/psu/psu14.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         DB::table('psu')->insert([
@@ -163,6 +191,8 @@ class PsuDataSeeder extends Seeder
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  269.00, 
             'psu_image_path' => 'images/psu/psu15.jpg',
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }
