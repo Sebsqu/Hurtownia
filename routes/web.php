@@ -12,6 +12,7 @@ use App\Http\Controllers\PsuController;
 use App\Http\Controllers\RamController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -99,3 +100,11 @@ Route::delete('/gpus/{id}', [GpuController::class, 'destroy'])->name('gpus.delet
 Route::delete('/mbs/{id}', [MbController::class, 'destroy'])->name('mbs.delete');
 Route::delete('/psus/{id}', [PsuController::class, 'destroy'])->name('psus.delete');
 Route::delete('/rams/{id}', [RamController::class, 'destroy'])->name('rams.delete');
+
+//admin
+Route::get('/adminIndex', [UserController::class, 'adminIndex'])->name('adminIndex');
+Route::get('/editUser/{id}', [UserController::class, 'editUser'])->name('editUser');
+Route::put('/updateUser/{id}', [UserController::class, 'updateUser'])->name('updateUser');
+Route::get('/deleteUser/{id}', [UserController::class, 'deleteUser'])->name('deleteUser');
+
+

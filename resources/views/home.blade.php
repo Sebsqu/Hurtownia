@@ -1,6 +1,15 @@
 @extends('layouts.app')
 @section('content')
-@if(auth()->user()->role_id == 2)
+@if(auth()->user()->role_id == 1)
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <button class="btn btn-primary" id="adminIndex">Wyświetl użytkowników</button>
+                <div id="itemsContainer"></div>
+            </div>
+        </div>
+    </div>
+@elseif(auth()->user()->role_id == 2)
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
@@ -32,8 +41,7 @@
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
 <script>
-    @if(auth()->user()->role_id == 3)
-$(document).ready(function() {
+@if(auth()->user()->role_id == 3)
     $('#loadCases').click(function() {
         $.ajax({
             type: 'GET',
@@ -43,18 +51,15 @@ $(document).ready(function() {
             }
         });
     });
-});
-$(document).ready(function() {
-        $.ajax({
-            type: 'GET',
-            url: '{{ route('showCases') }}',
-            success: function(data) {
-                $('#itemsContainer').html(data);
-            }
-        });
-});
 
-$(document).ready(function() {
+    $.ajax({
+        type: 'GET',
+        url: '{{ route('showCases') }}',
+        success: function(data) {
+            $('#itemsContainer').html(data);
+        }
+    });
+
     $('#loadCpus').click(function() {
         $.ajax({
             type: 'GET',
@@ -64,9 +69,7 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-$(document).ready(function() {
     $('#loadDisks').click(function() {
         $.ajax({
             type: 'GET',
@@ -76,9 +79,7 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-$(document).ready(function() {
     $('#loadGpus').click(function() {
         $.ajax({
             type: 'GET',
@@ -88,9 +89,7 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-$(document).ready(function() {
     $('#loadMbs').click(function() {
         $.ajax({
             type: 'GET',
@@ -100,9 +99,7 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-$(document).ready(function() {
     $('#loadPsus').click(function() {
         $.ajax({
             type: 'GET',
@@ -112,9 +109,7 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-$(document).ready(function() {
     $('#loadRams').click(function() {
         $.ajax({
             type: 'GET',
@@ -124,7 +119,6 @@ $(document).ready(function() {
             }
         });
     });
-});
 
 
 @elseif(auth()->user()->role_id == 2)
@@ -162,6 +156,21 @@ $('#editItemsShow').click(function() {
         }
     });
 });
+
+@elseif(auth()->user()->role_id == 1)
+
+//wyświetlanie użytkowników
+$('#adminIndex').click(function() {
+    $.ajax({
+        type: 'GET',
+        url: '{{ route('adminIndex') }}',
+        success: function(data) {
+            $('#itemsContainer').html(data);
+        }
+    });
+});
+
+
 
 @endif
 
