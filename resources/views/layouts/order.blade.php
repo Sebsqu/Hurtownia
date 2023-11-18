@@ -79,7 +79,15 @@
             <div class="order container">
                 <div class="order-item">
                     <p><strong>Produkty:</strong></p>
-                    <p>{{ $order['items'] }}</p>
+                    <ul>
+                    @php
+                        $items = explode(', ', $order['items']);
+                    @endphp
+                    @foreach($items as $item)
+                        <li>{{ $item }} ,</li>
+                    @endforeach
+                </ul>
+                    
                 </div>
 
                 <div class="order-item">

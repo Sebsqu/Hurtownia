@@ -16,6 +16,7 @@ class CreateOrdersTable extends Migration
             $table->datetime('order_time');
             $table->string('name');
             $table->text('address');
+            $table->integer('NIP');
             $table->string('payment_method');
             $table->timestamps();
 

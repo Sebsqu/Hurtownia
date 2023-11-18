@@ -62,6 +62,7 @@ class CartController extends Controller
         // Pobierz dane z formularza
         $name = $request->input('name');
         $address = $request->input('address');
+        $nip = $request->input('nip');
         $paymentMethod = $request->input('payment_method');
 
         // Oblicz całkowitą wartość koszyka
@@ -77,6 +78,7 @@ class CartController extends Controller
             'order_time' => now(),
             'name' => $name,
             'address' => $address,
+            'nip' => $nip,
             'payment_method' => $paymentMethod,
         ]);
 

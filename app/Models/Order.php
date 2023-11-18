@@ -16,6 +16,7 @@ class Order extends Model
         'order_time',
         'name',
         'address',
+        'nip',
         'payment_method',
     ];
 

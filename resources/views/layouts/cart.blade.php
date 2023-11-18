@@ -94,6 +94,10 @@
                                 <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
                             </div>
                             <div class="form-group">
+                                <label for="nip">NIP</label>
+                                <input type="number" class="form-control" id="nip" name="nip" required>
+                            </div>
+                            <div class="form-group">
                                 <label for="payment_method">Metoda płatności</label>
                                 <select class="form-control" id="payment_method" name="payment_method">
                                     <option value="Credit card">Karta kredytowa</option>
