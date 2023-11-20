@@ -4,6 +4,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
+                <button class="btn btn-primary" id="addItems">Dodaj przedmioty</button>
+                <button class="btn btn-primary" id="editItemsShow">Edytuj przedmioty</button>
                 <button class="btn btn-primary" id="adminIndex">Wyświetl użytkowników</button>
                 <div id="itemsContainer"></div>
             </div>
@@ -170,6 +172,26 @@ $('#adminIndex').click(function() {
     });
 });
 
+//dodawanie przedmiotów
+$('#addItems').click(function() {
+    $.ajax({
+        type: 'GET',
+        url: '{{ route('addItems') }}',
+        success: function(data) {
+            $('#itemsContainer').html(data);
+        }
+    });
+});
+//edytuj przedmioty
+$('#editItemsShow').click(function() {
+    $.ajax({
+        type: 'GET',
+        url: '{{ route('editItemsShow') }}',
+        success: function(data) {
+            $('#itemsContainer').html(data);
+        }
+    });
+});
 
 
 @endif
