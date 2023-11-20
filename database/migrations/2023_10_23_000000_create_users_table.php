@@ -25,6 +25,7 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+        (new \Database\Seeders\UserDataSeeder())->run();
     }
 
     /**

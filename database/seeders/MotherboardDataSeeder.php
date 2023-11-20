@@ -22,7 +22,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'AMD B550',
             'mb_supported_processors' => 'AMD ZEN 2/3(3th/4th gen)',
             'mb_price' =>  539.00, 
-            'mb_image_path' => 'images/mb/mb1.jpg',
+            'mb_image_path' => 'mb1.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -34,7 +34,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'Intel B660',
             'mb_supported_processors' => 'Alder Lake-S (12th gen), Raptor Lake (13th gen)',
             'mb_price' =>  499.00, 
-            'mb_image_path' => 'images/mb/mb2.jpg',
+            'mb_image_path' => 'mb2.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -46,7 +46,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'Intel z690',
             'mb_supported_processors' => 'Alder Lake-S (12th gen), Raptor Lake (13th gen)',
             'mb_price' =>  969.00, 
-            'mb_image_path' => 'images/mb/mb3.jpg',
+            'mb_image_path' => 'mb3.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -58,7 +58,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'AMD B550',
             'mb_supported_processors' => 'AMD ZEN 2/3(3th/4th gen)',
             'mb_price' =>  489.00, 
-            'mb_image_path' => 'images/mb/mb4.jpg',
+            'mb_image_path' => 'mb4.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -70,7 +70,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'AMD B550',
             'mb_supported_processors' => 'AMD ZEN 2/3(3th/4th gen)',
             'mb_price' => 635.00, 
-            'mb_image_path' => 'images/mb/mb5.jpg',
+            'mb_image_path' => 'mb5.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -82,7 +82,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'AMD B450',
             'mb_supported_processors' => 'AMD ZEN 1/1+/2/3 (1th gen, 2th gen, 3th gen, 4th gen)',
             'mb_price' =>  369.00, 
-            'mb_image_path' => 'images/mb/mb6.jpg',
+            'mb_image_path' => 'mb6.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -94,7 +94,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'Intel H410',
             'mb_supported_processors' => 'Comet Lake (10th gen)',
             'mb_price' =>  299.00, 
-            'mb_image_path' => 'images/mb/mb7.jpg',
+            'mb_image_path' => 'mb7.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -106,7 +106,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'Intel Z790',
             'mb_supported_processors' => 'Alder Lake-S (12th gen), Raptor Lake (13th gen)',
             'mb_price' =>  1499.00, 
-            'mb_image_path' => 'images/mb/mb8.jpg',
+            'mb_image_path' => 'mb8.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -118,7 +118,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'Intel B760',
             'mb_supported_processors' => 'Alder Lake-S (12th gen), Raptor Lake (13th gen)',
             'mb_price' =>  659.00, 
-            'mb_image_path' => 'images/mb/mb9.jpg',
+            'mb_image_path' => 'mb9.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -130,7 +130,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'Intel Z590',
             'mb_supported_processors' => 'Comet Lake (10th gen), Rocket Lake(11th gen)',
             'mb_price' =>  849.00, 
-            'mb_image_path' => 'images/mb/mb10.jpg',
+            'mb_image_path' => 'mb10.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -142,7 +142,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'AMD X670',
             'mb_supported_processors' => 'AMD Zen 4 (5th gen)',
             'mb_price' =>  1449.00, 
-            'mb_image_path' => 'images/mb/mb11.jpg',
+            'mb_image_path' => 'mb11.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -154,7 +154,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'AMD B550',
             'mb_supported_processors' => 'Zen 2 (3th gen), Zen 3 (4th gen)',
             'mb_price' =>  849.00, 
-            'mb_image_path' => 'images/mb/mb12.jpg',
+            'mb_image_path' => 'mb12.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -166,7 +166,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'AMD B550',
             'mb_supported_processors' => 'Zen 2 (3th gen), Zen 3 (4th gen)',
             'mb_price' =>  529.00, 
-            'mb_image_path' => 'images/mb/mb13.jpg',
+            'mb_image_path' => 'mb13.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -178,7 +178,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'Intel B760',
             'mb_supported_processors' => 'Alder Lake-S (12th gen), Raptor Lake (13th gen)',
             'mb_price' =>  899.00, 
-            'mb_image_path' => 'images/mb/mb14.jpg',
+            'mb_image_path' => 'mb14.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -190,7 +190,7 @@ class MotherboardDataSeeder extends Seeder
             'mb_chipset' => 'AMD B650',
             'mb_supported_processors' => 'AMD Zen 4 (5th gen)',
             'mb_price' =>  1079.00, 
-            'mb_image_path' => 'images/mb/mb15.jpg',
+            'mb_image_path' => 'mb15.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cases;
+use Illuminate\Support\Facades\Storage;
 
 class CaseController extends Controller
 {
@@ -40,8 +41,13 @@ class CaseController extends Controller
             'case_fans'=>$request->case_fans,
             'case_side_panel'=>$request->case_side_panel,
             'case_price'=>(float)$request->case_price,
-            'case_image_path'=>$request->case_image_path,
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/case'), $imageName);
+        $data['case_image_path'] = $imageName;
+
         Cases::create($data);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do bazy!');
     }
@@ -69,8 +75,12 @@ class CaseController extends Controller
             'case_fans' => $request->input('case_fans'),
             'case_side_panel' => $request->input('case_side_panel'),
             'case_price' => (float) $request->input('case_price'),
-            'case_image_path' => $request->input('case_image_path'),
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/case'), $imageName);
+        $data['case_image_path'] = $imageName;
 
         $case->update($data);
         return redirect('/')->with('success', 'Obudowa została zaktualizowana!');

@@ -24,7 +24,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '1000W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 2x',
             'gpu_price' =>  10299.00, 
-            'gpu_image_path' => 'images/gpu/gpu1.jpg',
+            'gpu_image_path' => 'gpu1.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -38,7 +38,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '1000W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 2x',
             'gpu_price' =>  9449.00, 
-            'gpu_image_path' => 'images/gpu/gpu2.jpg',
+            'gpu_image_path' => 'gpu2.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -52,7 +52,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 2x, DisplayPort - 2x',
             'gpu_price' =>  7399.00, 
-            'gpu_image_path' => 'images/gpu/gpu3.jpg',
+            'gpu_image_path' => 'gpu3.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -66,7 +66,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  6959.00, 
-            'gpu_image_path' => 'images/gpu/gpu4.jpg',
+            'gpu_image_path' => 'gpu4.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -80,7 +80,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  6699.00, 
-            'gpu_image_path' => 'images/gpu/gpu5.jpg',
+            'gpu_image_path' => 'gpu5.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -94,7 +94,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  5299.00, 
-            'gpu_image_path' => 'images/gpu/gpu6.jpg',
+            'gpu_image_path' => 'gpu6.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -108,7 +108,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  4899.00, 
-            'gpu_image_path' => 'images/gpu/gpu7.jpg',
+            'gpu_image_path' => 'gpu7.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -122,7 +122,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '850W',
             'gpu_outputs' => 'HDMI - 3x, DisplayPort - 3x',
             'gpu_price' =>  4249.00, 
-            'gpu_image_path' => 'images/gpu/gpu8.jpg',
+            'gpu_image_path' => 'gpu8.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -136,7 +136,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '850W',
             'gpu_outputs' => 'HDMI - 2x, DisplayPort - 3x',
             'gpu_price' =>  3899.00, 
-            'gpu_image_path' => 'images/gpu/gpu9.jpg',
+            'gpu_image_path' => 'gpu9.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -150,7 +150,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '850W',
             'gpu_outputs' => 'HDMI - 3x, DisplayPort - 3x',
             'gpu_price' =>  3799.00, 
-            'gpu_image_path' => 'images/gpu/gpu10.jpg',
+            'gpu_image_path' => 'gpu10.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -164,7 +164,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  3479.00, 
-            'gpu_image_path' => 'images/gpu/gpu11.jpg',
+            'gpu_image_path' => 'gpu11.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -178,7 +178,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 2x, DisplayPort - 3x',
             'gpu_price' =>  3349.00, 
-            'gpu_image_path' => 'images/gpu/gpu12.jpg',
+            'gpu_image_path' => 'gpu12.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -192,7 +192,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '650W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  2949.00, 
-            'gpu_image_path' => 'images/gpu/gpu13.jpg',
+            'gpu_image_path' => 'gpu13.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -206,7 +206,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '550W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  2249.00, 
-            'gpu_image_path' => 'images/gpu/gpu14.jpg',
+            'gpu_image_path' => 'gpu14.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -220,7 +220,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '550W',
             'gpu_outputs' => 'HDMI - 2x, DisplayPort - 2x',
             'gpu_price' =>  1929.00, 
-            'gpu_image_path' => 'images/gpu/gpu15.jpg',
+            'gpu_image_path' => 'gpu15.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -234,7 +234,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '650W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  1829.00, 
-            'gpu_image_path' => 'images/gpu/gpu16.jpg',
+            'gpu_image_path' => 'gpu16.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -248,7 +248,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '550W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  1929.00, 
-            'gpu_image_path' => 'images/gpu/gpu17.jpg',
+            'gpu_image_path' => 'gpu17.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -262,7 +262,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '550W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  1719.00, 
-            'gpu_image_path' => 'images/gpu/gpu18.jpg',
+            'gpu_image_path' => 'gpu18.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -276,7 +276,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '550W',
             'gpu_outputs' => 'HDMI - 2x, DisplayPort - 3x',
             'gpu_price' =>  1699.00, 
-            'gpu_image_path' => 'images/gpu/gpu19.jpg',
+            'gpu_image_path' => 'gpu19.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -290,7 +290,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '850W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  6799.00, 
-            'gpu_image_path' => 'images/gpu/gpu20.jpg',
+            'gpu_image_path' => 'gpu20.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -304,7 +304,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '850W',
             'gpu_outputs' => 'HDMI - 2x, DisplayPort - 2x',
             'gpu_price' =>  6399.00, 
-            'gpu_image_path' => 'images/gpu/gpu21.jpg',
+            'gpu_image_path' => 'gpu21.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -318,7 +318,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  5549.00, 
-            'gpu_image_path' => 'images/gpu/gpu22.jpg',
+            'gpu_image_path' => 'gpu22.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -332,7 +332,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  5649.00, 
-            'gpu_image_path' => 'images/gpu/gpu23.jpg',
+            'gpu_image_path' => 'gpu23.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -346,7 +346,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 2x, DisplayPort - 2x',
             'gpu_price' =>  5149.00, 
-            'gpu_image_path' => 'images/gpu/gpu24.jpg',
+            'gpu_image_path' => 'gpu24.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -360,7 +360,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  3599.00, 
-            'gpu_image_path' => 'images/gpu/gpu25.jpg',
+            'gpu_image_path' => 'gpu25.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -374,7 +374,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '750W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  3199.00, 
-            'gpu_image_path' => 'images/gpu/gpu26.jpg',
+            'gpu_image_path' => 'gpu26.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -388,7 +388,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '500W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  2099.00, 
-            'gpu_image_path' => 'images/gpu/gpu27.jpg',
+            'gpu_image_path' => 'gpu27.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -402,7 +402,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '500W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 3x',
             'gpu_price' =>  1949.00, 
-            'gpu_image_path' => 'images/gpu/gpu28.jpg',
+            'gpu_image_path' => 'gpu28.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -416,7 +416,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '400W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 1x',
             'gpu_price' =>  969.00, 
-            'gpu_image_path' => 'images/gpu/gpu29.jpg',
+            'gpu_image_path' => 'gpu29.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -430,7 +430,7 @@ class GpuDataSeeder extends Seeder
             'gpu_charger' => '400W',
             'gpu_outputs' => 'HDMI - 1x, DisplayPort - 1x',
             'gpu_price' =>  799.00, 
-            'gpu_image_path' => 'images/gpu/gpu30.jpg',
+            'gpu_image_path' => 'gpu30.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

@@ -2,7 +2,7 @@
     <div class='item'>
         <div class='name'>{{ $case->case_fullname }}
         <br>
-        <img src='{{ $case->case_image_path }}' alt='Cases' class='image'>
+        <img src='{{asset("images/case/" . $case->case_image_path)}}' alt='Cases' class='image'>
         </div>
         <div class='type'>{{ $case->case_type }}</div>
         <div class='standard'>{{ $case->case_standard }}</div>

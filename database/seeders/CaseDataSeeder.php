@@ -23,7 +23,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 3',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 569.00 , 
-            'case_image_path' => 'images/case/case1.jpg',
+            'case_image_path' => 'case1.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -35,7 +35,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 3',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 239.00 ,
-            'case_image_path' => 'images/case/case2.jpg',
+            'case_image_path' => 'case2.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -47,7 +47,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane Wentylatory: 4',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 469.00,
-            'case_image_path' => 'images/case/case3.jpg',
+            'case_image_path' => 'case3.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -59,7 +59,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 1',
             'case_side_panel' => 'Brak szkła hartowanego',
             'case_price' => 159.00,
-            'case_image_path' => 'images/case/case4.jpg',
+            'case_image_path' => 'case4.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -71,7 +71,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 4',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 329.00,
-            'case_image_path' => 'images/case/case5.jpg',
+            'case_image_path' => 'case5.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -83,7 +83,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 4',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 749.00,
-            'case_image_path' => 'images/case/case6.jpg',
+            'case_image_path' => 'case6.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -95,7 +95,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 2',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 479.00,
-            'case_image_path' => 'images/case/case7.jpg',
+            'case_image_path' => 'case7.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -107,7 +107,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 3',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 549.00,
-            'case_image_path' => 'images/case/case8.jpg',
+            'case_image_path' => 'case8.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -119,7 +119,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 4',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 699.00,
-            'case_image_path' => 'images/case/case9.jpg',
+            'case_image_path' => 'case9.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -131,7 +131,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 1',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 279.00,
-            'case_image_path' => 'images/case/case10.jpg',
+            'case_image_path' => 'case10.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -143,7 +143,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 1',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 299.00,
-            'case_image_path' => 'images/case/case11.jpg',
+            'case_image_path' => 'case11.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -155,7 +155,7 @@ class CaseDataSeeder extends Seeder
             'case_fans' => 'Zainstalowane wentylatory: 1',
             'case_side_panel' => 'Szkło hartowane',
             'case_price' => 299.00,
-            'case_image_path' => 'images/case/case12.jpg',
+            'case_image_path' => 'case12.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

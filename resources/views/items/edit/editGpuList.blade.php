@@ -4,18 +4,13 @@
 </head>
 <div class="container col-md-4">
     <h1>Edytuj GPU</h1>
-    <form action="{{ route('gpus.update', ['id' => $gpu->id]) }}" method="POST">
+    <form action="{{ route('gpus.update', ['id' => $gpu->id]) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
         <div class="form-group">
             <label for="gpu_fullname">Nazwa:</label>
             <input type="text" name="gpu_fullname" id="gpu_fullname" value="{{ $gpu->gpu_fullname }}" class="form-control mb-2">
-        </div>
-
-        <div class="form-group">
-            <label for="gpu_image_path">Ścieżka obrazu:</label>
-            <input type="text" name="gpu_image_path" id="gpu_image_path" value="{{ $gpu->gpu_image_path }}" class="form-control mb-2">
         </div>
 
         <div class="form-group">
@@ -46,6 +41,11 @@
         <div class="form-group">
             <label for="gpu_price">Cena:</label>
             <input type="text" name="gpu_price" id="gpu_price" value="{{ $gpu->gpu_price }}" class="form-control mb-2">
+        </div>
+
+        <div class="form-group">
+            <label for="image">Dodaj obrazek:</label><br>
+            <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
         </div>
 
         <button type="submit" class="btn btn-primary">Zapisz zmiany</button>

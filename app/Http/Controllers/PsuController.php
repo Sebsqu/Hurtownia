@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Psus;
+use Illuminate\Support\Facades\Storage;
 
 class PsuController extends Controller
 {
@@ -42,6 +43,12 @@ class PsuController extends Controller
             'psu_price'=>(float)$request->psu_price,
             'psu_image_path'=>$request->psu_image_path,
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/psu'), $imageName);
+        $data['psu_image_path'] = $imageName;
+
         Psus::create($data);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do bazy!');
     }
@@ -71,6 +78,11 @@ class PsuController extends Controller
             'psu_price' => (float) $request->input('psu_price'),
             'psu_image_path' => $request->input('psu_image_path'),
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/psu'), $imageName);
+        $data['psu_image_path'] = $imageName;
 
         $psu->update($data);
         return redirect('/')->with('success', 'Dysk został zaktualizowany!');

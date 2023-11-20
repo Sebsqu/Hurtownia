@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Rams;
+use Illuminate\Support\Facades\Storage;
 
 class RamController extends Controller
 {
@@ -43,6 +44,12 @@ class RamController extends Controller
             'ram_price'=>(float)$request->ram_price,
             'ram_image_path'=>$request->ram_image_path,
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/ram'), $imageName);
+        $data['ram_image_path'] = $imageName;
+
         Rams::create($data);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do bazy!');
     }
@@ -73,6 +80,11 @@ class RamController extends Controller
             'ram_price' => (float) $request->input('ram_price'),
             'ram_image_path' => $request->input('ram_image_path'),
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/ram'), $imageName);
+        $data['ram_image_path'] = $imageName;
 
         $ram->update($data);
         return redirect('/')->with('success', 'Pamięć RAM została zaktualizowana!');

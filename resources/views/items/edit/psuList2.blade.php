@@ -1,7 +1,7 @@
 @foreach($psus as $psu)
         <div class='item'>
             <div class='name'>{{ $psu->psu_fullname }}</div>
-            <img src='{{ $psu->psu_image_path }}' alt='Zasilacz' class='image'>
+            <img src='{{asset("images/psu/" . $psu->psu_image_path)}}' alt='Psus' class='image'>
             <div class='power'>Moc: {{ $psu->psu_power }}</div>
             <div class='standard'>Standard: {{ $psu->psu_standard }}</div>
             <div class='efficiency'>Wydajność: {{ $psu->psu_efficiency }}</div>

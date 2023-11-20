@@ -4,18 +4,13 @@
 </head>
 <div class="container col-md-4">
     <h1>Edytuj Obudowę</h1>
-    <form action="{{ route('cases.update', ['id' => $case->id]) }}" method="POST">
+    <form action="{{ route('cases.update', ['id' => $case->id]) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
         <div class="form-group">
             <label for="case_fullname">Nazwa:</label>
             <input type="text" name="case_fullname" id="case_fullname" value="{{ $case->case_fullname }}" class="form-control mb-2">
-        </div>
-
-        <div class="form-group">
-            <label for="case_image_path">Ścieżka obrazu:</label>
-            <input type="text" name="case_image_path" id="case_image_path" value="{{ $case->case_image_path }}" class="form-control mb-2">
         </div>
 
         <div class="form-group">
@@ -41,6 +36,11 @@
         <div class="form-group">
             <label for="case_price">Cena:</label>
             <input type="text" name="case_price" id="case_price" value="{{ $case->case_price }}" class="form-control mb-2">
+        </div>
+
+        <div class="form-group">
+            <label for="image">Dodaj obrazek:</label><br>
+            <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
         </div>
 
         <button type="submit" class="btn btn-primary mt-4">Zapisz zmiany</button>

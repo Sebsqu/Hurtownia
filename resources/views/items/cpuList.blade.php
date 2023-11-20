@@ -2,7 +2,7 @@
     <div class='item'>
         <div class='name'>{{ $cpu->cpu_fullname }}
         <br>
-        <img src='{{ $cpu->cpu_image_path }}' alt='Cpus' class='image'>
+        <img src='{{asset("images/cpu/" . $cpu->cpu_image_path)}}' alt='Cpus' class='image'>
         </div>
         <div class='socket'>{{ $cpu->cpu_socket }}</div>
         <div class='timing'>{{ $cpu->cpu_timing }}</div>

@@ -2,7 +2,7 @@
     <div class='item'>
         <div class='name'>{{ $psu->psu_fullname }}
         <br>   
-        <img src='{{ $psu->psu_image_path }}' alt='psus' class='image'>
+        <img src='{{asset("images/psu/" . $psu->psu_image_path)}}' alt='Psus' class='image'>
         </div>
         <div class='power'>{{ $psu->psu_power }}</div>
         <div class='standard'>{{ $psu->psu_standard }}</div>

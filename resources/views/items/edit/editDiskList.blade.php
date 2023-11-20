@@ -4,18 +4,13 @@
 </head>
 <div class="container col-md-4">
     <h1>Edytuj Dysk</h1>
-    <form action="{{ route('disks.update', ['id' => $disk->id]) }}" method="POST">
+    <form action="{{ route('disks.update', ['id' => $disk->id]) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
         <div class="form-group">
             <label for="disk_fullname">Nazwa:</label>
             <input type="text" name="disk_fullname" id="disk_fullname" value="{{ $disk->disk_fullname }}" class="form-control mb-2">
-        </div>
-
-        <div class="form-group">
-            <label for="disk_image_path">Ścieżka obrazu:</label>
-            <input type="text" name="disk_image_path" id="disk_image_path" value="{{ $disk->disk_image_path }}" class="form-control mb-2">
         </div>
 
         <div class="form-group">
@@ -46,6 +41,11 @@
         <div class="form-group">
             <label for="disk_price">Cena:</label>
             <input type="text" name="disk_price" id="disk_price" value="{{ $disk->disk_price }}" class="form-control mb-s2">
+        </div>
+
+        <div class="form-group">
+            <label for="image">Dodaj obrazek:</label><br>
+            <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
         </div>
 
         <button type="submit" class="btn btn-primary">Zapisz zmiany</button>

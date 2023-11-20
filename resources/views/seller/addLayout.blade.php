@@ -18,7 +18,7 @@
     <h3>Dodaj obudowę</h3>
     <div>
         <p>
-            <form action="{{ route('addCase') }}" method="post">
+            <form action="{{ route('addCase') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <label for="case_fullname">Nazwa obudowy</label>
                 <input type="text" name='case_fullname' class="form-control"><br>
@@ -32,8 +32,8 @@
                 <input type="text" name='case_side_panel' class="form-control"><br>
                 <label for="case_price">Cena</label>
                 <input type="number" name='case_price' class="form-control"><br>
-                <label for="case_image_path">Lokalizacja zdjęcia</label>
-                <input type="text" name='case_image_path' class="form-control"><br>
+                <label for="image">Upload Image:</label><br>
+                <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
                 <button class="btn btn-primary">Dodaj obudowę</button>
             </form>
         </p>
@@ -42,7 +42,7 @@
     <h3>Dodaj procesor</h3>
     <div>
         <p>
-            <form action="{{ route('addCpu') }}" method="post">
+            <form action="{{ route('addCpu') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <label for="cpu_fullname">Nazwa procesora</label>
                 <input type="text" name='cpu_fullname' class="form-control"><br>
@@ -58,8 +58,8 @@
                 <input type="text" name='cpu_graphics' class="form-control"><br>
                 <label for="cpu_price">Cena procesora</label>
                 <input type="text" name='cpu_price' class="form-control"><br>
-                <label for="cpu_image_path">Lokalizacja zdjęcia</label>
-                <input type="text" name='cpu_image_path' class="form-control"><br>
+                <label for="image">Upload Image:</label><br>
+                <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
                 <button class="btn btn-primary">Dodaj procesor</button>
             </form>
         </p>
@@ -68,7 +68,7 @@
     <h3>Dodaj dysk</h3>
     <div>
         <p>
-            <form action="{{ route('addDisk') }}" method="post">
+            <form action="{{ route('addDisk') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <label for="disk_fullname">Nazwa dysku</label>
                 <input type="text" name='disk_fullname' class="form-control"><br>
@@ -84,8 +84,8 @@
                 <input type="text" name='disk_write_speed' class="form-control"><br>
                 <label for="disk_price">Cena dysku</label>
                 <input type="text" name='disk_price' class="form-control"><br>
-                <label for="disk_image_path">Lokalizacja zdjęcia</label>
-                <input type="text" name='disk_image_path' class="form-control"><br>
+                <label for="image">Upload Image:</label><br>
+                <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
                 <button class="btn btn-primary">Dodaj dysk</button>
             </form>
         </p>
@@ -94,7 +94,7 @@
     <h3>Dodaj kartę graficzna</h3>
     <div>
         <p>
-            <form action="{{ route('addGpu') }}" method="post">
+            <form action="{{ route('addGpu') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <label for="gpu_fullname">Nazwa karty graficznej</label>
                 <input type="text" name='gpu_fullname' class="form-control"><br>
@@ -112,8 +112,8 @@
                 <input type="text" name='gpu_outputs' class="form-control"><br>
                 <label for="gpu_price">Cena karty graficznej</label>
                 <input type="text" name='gpu_price' class="form-control"><br>
-                <label for="gpu_image_path">Lokalizacja zdjęcia</label>
-                <input type="text" name='gpu_image_path' class="form-control"><br>
+                <label for="image">Upload Image:</label><br>
+                <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
                 <button class="btn btn-primary">Dodaj kartę graficzną</button>
             </form>    
         </p>
@@ -122,7 +122,7 @@
     <h3>Dodaj płytę główną</h3>
     <div>
         <p>
-            <form action="{{ route('addMb') }}" method="post">
+            <form action="{{ route('addMb') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <label for="mb_fullname">Nazwa płyty głównej</label>
                 <input type="text" name='mb_fullname' class="form-control"><br>
@@ -136,8 +136,8 @@
                 <input type="text" name='mb_supported_processors' class="form-control"><br>
                 <label for="mb_price">Cena płyty głównej</label>
                 <input type="text" name='mb_price' class="form-control"><br>
-                <label for="mb_image_path">Lokalizacja zdjęcia</label>
-                <input type="text" name='mb_image_path' class="form-control"><br>
+                <label for="image">Upload Image:</label><br>
+                <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
                 <button class="btn btn-primary">Dodaj kartę graficzną</button>
             </form>        
         </p>
@@ -146,7 +146,7 @@
     <h3>Dodaj zasilacz</h3>
     <div>
         <p>
-            <form action="{{ route('addPsu') }}" method="post">
+            <form action="{{ route('addPsu') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <label for="psu_fullname">Nazwa zasilacza</label>
                 <input type="text" name='psu_fullname' class="form-control"><br>
@@ -160,8 +160,8 @@
                 <input type="text" name='psu_certificate' class="form-control"><br>
                 <label for="psu_price">Cena zasilacza</label>
                 <input type="text" name='psu_price' class="form-control"><br>
-                <label for="psu_image_path">Lokalizacja zdjęcia</label>
-                <input type="text" name='psu_image_path' class="form-control"><br>
+                <label for="image">Upload Image:</label><br>
+                <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
                 <button class="btn btn-primary">Dodaj zasilacz</button>
             </form>    
         </p>
@@ -170,7 +170,7 @@
     <h3>Dodaj pamięć operacyjną ram</h3>
     <div>
         <p>
-            <form action="{{ route('addRam') }}" method="post">
+            <form action="{{ route('addRam') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <label for="ram_fullname">Nazwa pamięci operacyjnej ram</label>
                 <input type="text" name='ram_fullname' class="form-control"><br>
@@ -186,8 +186,8 @@
                 <input type="text" name='ram_cycle_latency' class="form-control"><br>
                 <label for="ram_price">Cena zasilacza</label>
                 <input type="text" name='ram_price' class="form-control"><br>
-                <label for="ram_image_path">Lokalizacja zdjęcia</label>
-                <input type="text" name='ram_image_path' class="form-control"><br>
+                <label for="image">Upload Image:</label><br>
+                <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
                 <button class="btn btn-primary">Dodaj pamięć ram</button>
             </form>    
         </p>

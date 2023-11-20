@@ -23,7 +23,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '4600MHz',
             'ram_cycle_latency' => 'CL 18',
             'ram_price' =>  1759.00, 
-            'ram_image_path' => 'images/ram/ram1.jpg',
+            'ram_image_path' => 'ram1.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -36,7 +36,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3600MHz',
             'ram_cycle_latency' => 'CL 18',
             'ram_price' =>  1189.00, 
-            'ram_image_path' => 'images/ram/ram2.jpg',
+            'ram_image_path' => 'ram2.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -49,7 +49,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3600MHz',
             'ram_cycle_latency' => 'CL 18',
             'ram_price' =>  1089.00, 
-            'ram_image_path' => 'images/ram/ram3.jpg',
+            'ram_image_path' => 'ram3.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -62,7 +62,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3200MHz',
             'ram_cycle_latency' => 'CL 16',
             'ram_price' =>  999.00, 
-            'ram_image_path' => 'images/ram/ram4.jpg',
+            'ram_image_path' => 'ram4.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -75,7 +75,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '4000MHz',
             'ram_cycle_latency' => 'CL 18',
             'ram_price' =>  679.00, 
-            'ram_image_path' => 'images/ram/ram5.jpg',
+            'ram_image_path' => 'ram5.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -88,7 +88,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3733MHz',
             'ram_cycle_latency' => 'CL 19',
             'ram_price' =>  649.00, 
-            'ram_image_path' => 'images/ram/ram6.jpg',
+            'ram_image_path' => 'ram6.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -101,7 +101,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3200MHz',
             'ram_cycle_latency' => 'CL 16',
             'ram_price' =>  619.00, 
-            'ram_image_path' => 'images/ram/ram7.jpg',
+            'ram_image_path' => 'ram7.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -114,7 +114,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3600MHz',
             'ram_cycle_latency' => 'CL 18',
             'ram_price' =>  599.00, 
-            'ram_image_path' => 'images/ram/ram8.jpg',
+            'ram_image_path' => 'ram8.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -127,7 +127,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3200MHz',
             'ram_cycle_latency' => 'CL 16',
             'ram_price' =>  579.00, 
-            'ram_image_path' => 'images/ram/ram9.jpg',
+            'ram_image_path' => 'ram9.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -140,7 +140,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3200MHz',
             'ram_cycle_latency' => 'CL 16',
             'ram_price' =>  559.00, 
-            'ram_image_path' => 'images/ram/ram10.jpg',
+            'ram_image_path' => 'ram10.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -153,7 +153,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3600MHz',
             'ram_cycle_latency' => 'CL 18',
             'ram_price' =>  529.00, 
-            'ram_image_path' => 'images/ram/ram11.jpg',
+            'ram_image_path' => 'ram11.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -166,7 +166,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3600MHz',
             'ram_cycle_latency' => 'CL 16',
             'ram_price' =>  529.00, 
-            'ram_image_path' => 'images/ram/ram12.jpg',
+            'ram_image_path' => 'ram12.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -179,7 +179,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3600MHz',
             'ram_cycle_latency' => 'CL 18',
             'ram_price' =>  429.00, 
-            'ram_image_path' => 'images/ram/ram13.jpg',
+            'ram_image_path' => 'ram13.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -192,7 +192,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3200MHz',
             'ram_cycle_latency' => 'CL 16',
             'ram_price' =>  395.00, 
-            'ram_image_path' => 'images/ram/ram14.jpg',
+            'ram_image_path' => 'ram14.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -205,7 +205,7 @@ class RamDataSeeder extends Seeder
             'ram_frequency' => '3200MHz',
             'ram_cycle_latency' => 'CL 16',
             'ram_price' => 299.00, 
-            'ram_image_path' => 'images/ram/ram15.jpg',
+            'ram_image_path' => 'ram15.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

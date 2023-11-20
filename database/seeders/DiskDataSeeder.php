@@ -23,7 +23,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '3300 MB/s',
             'disk_write_speed' => '3000 MB/s',
             'disk_price' =>  219.00, 
-            'disk_image_path' => 'images/disk/disk1.jpg',
+            'disk_image_path' => 'disk1.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -36,7 +36,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '3100 MB/s',
             'disk_write_speed' => '2600 MB/s',
             'disk_price' =>  159.00, 
-            'disk_image_path' => 'images/disk/disk2.jpg',
+            'disk_image_path' => 'disk2.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -49,7 +49,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '550 MB/s',
             'disk_write_speed' => '500 MB/s',
             'disk_price' =>  109.00, 
-            'disk_image_path' => 'images/disk/disk3.jpg',
+            'disk_image_path' => 'disk3.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -62,7 +62,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '560 MB/s',
             'disk_write_speed' => '530 MB/s',
             'disk_price' =>  189.00, 
-            'disk_image_path' => 'images/disk/disk4.jpg',
+            'disk_image_path' => 'disk4.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -75,7 +75,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '7000 MB/s',
             'disk_write_speed' => '5000 MB/s',
             'disk_price' => 399.00, 
-            'disk_image_path' => 'images/disk/disk5.jpg',
+            'disk_image_path' => 'disk5.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -88,7 +88,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '555 MB/s',
             'disk_write_speed' => '540 MB/s',
             'disk_price' =>  115.00, 
-            'disk_image_path' => 'images/disk/disk6.jpg',
+            'disk_image_path' => 'disk6.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -101,7 +101,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '520 MB/s',
             'disk_write_speed' => '500 MB/s',
             'disk_price' =>  69.00, 
-            'disk_image_path' => 'images/disk/disk7.jpg',
+            'disk_image_path' => 'disk7.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -114,7 +114,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '7500 MB/s',
             'disk_write_speed' => '6300 MB/s',
             'disk_price' =>  339.00, 
-            'disk_image_path' => 'images/disk/disk8.jpg',
+            'disk_image_path' => 'disk8.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -127,7 +127,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '550 MB/s',
             'disk_write_speed' => '500 MB/s',
             'disk_price' =>  119.00, 
-            'disk_image_path' => 'images/disk/disk9.jpg',
+            'disk_image_path' => 'disk9.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -140,7 +140,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '3500 MB/s',
             'disk_write_speed' => '3000 MB/s',
             'disk_price' =>  239.00, 
-            'disk_image_path' => 'images/disk/disk10.jpg',
+            'disk_image_path' => 'disk10.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -153,7 +153,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '-----',
             'disk_write_speed' => '-----',
             'disk_price' =>  245.00, 
-            'disk_image_path' => 'images/disk/disk11.jpg',
+            'disk_image_path' => 'disk11.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -166,7 +166,7 @@ class DiskDataSeeder extends Seeder
             'disk_read_speed' => '-----',
             'disk_write_speed' => '-----',
             'disk_price' => 189.00 , 
-            'disk_image_path' => 'images/disk/disk12.jpg',
+            'disk_image_path' => 'disk12.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

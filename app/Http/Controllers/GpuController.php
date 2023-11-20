@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Gpus;
+use Illuminate\Support\Facades\Storage;
 
 class GpuController extends Controller
 {
@@ -41,8 +42,13 @@ class GpuController extends Controller
             'gpu_charger'=>$request->gpu_charger,
             'gpu_outputs'=>$request->gpu_outputs,
             'gpu_price'=>(float)$request->gpu_price,
-            'gpu_image_path'=>$request->gpu_image_path,
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/gpu'), $imageName);
+        $data['gpu_image_path'] = $imageName;
+
         Gpus::create($data);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do bazy!');
     }
@@ -71,8 +77,12 @@ class GpuController extends Controller
             'gpu_timing' => $request->input('gpu_timing'),
             'gpu_outputs' => $request->input('gpu_outputs'),
             'gpu_price' => (float) $request->input('gpu_price'),
-            'gpu_image_path' => $request->input('gpu_image_path'),
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/gpu'), $imageName);
+        $data['gpu_image_path'] = $imageName;
 
         $gpu->update($data);
         return redirect('/')->with('success', 'GPU została zaktualizowana!');

@@ -2,7 +2,7 @@
     <div class='item'>
         <div class='name'>{{ $mb->mb_fullname }}
         <br>
-        <img src='{{ $mb->mb_image_path }}' alt='mbs' class='image'>
+        <img src='{{asset("images/mb/" . $mb->mb_image_path)}}' alt='Mbs' class='image'>
         </div>
         <div class='format'>{{ $mb->mb_format }}</div>
         <div class='socket'>{{ $mb->mb_socket }}</div>

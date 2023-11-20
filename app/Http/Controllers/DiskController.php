@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Disks;
+use Illuminate\Support\Facades\Storage;
 
 class DiskController extends Controller
 {
@@ -41,8 +42,14 @@ class DiskController extends Controller
             'disk_read_speed'=>$request->disk_read_speed,
             'disk_write_speed'=>$request->disk_write_speed,
             'disk_price'=>(float)$request->disk_price,
-            'disk_image_path'=>$request->disk_image_path,
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/disk'), $imageName);
+        $data['disk_image_path'] = $imageName;
+
+
         Disks::create($data);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do bazy!');
     }
@@ -71,8 +78,13 @@ class DiskController extends Controller
             'disk_read_speed' => $request->input('disk_read_speed'),
             'disk_write_speed' => $request->input('disk_write_speed'),
             'disk_price' => (float) $request->input('disk_price'),
-            'disk_image_path' => $request->input('disk_image_path'),
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/disk'), $imageName);
+        $data['disk_image_path'] = $imageName;
+
 
         $disk->update($data);
         return redirect('/')->with('success', 'Dysk został zaktualizowany!');

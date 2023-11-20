@@ -2,7 +2,7 @@
     <div class='item'>
         <div class='name'>{{ $ram->ram_fullname }}
         <br>    
-        <img src='{{ $ram->ram_image_path }}' alt='rams' class='image'>
+        <img src='{{asset("images/ram/" . $ram->ram_image_path)}}' alt='Rams' class='image'>
         </div>
         <div class='type_of_memory'>{{ $ram->ram_type_of_memory }}</div>
         <div class='total_capacity'>{{ $ram->ram_total_capacity }}</div>

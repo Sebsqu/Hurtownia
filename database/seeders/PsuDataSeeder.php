@@ -22,7 +22,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '90% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  499.00, 
-            'psu_image_path' => 'images/psu/psu1.jpg',
+            'psu_image_path' => 'psu1.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -34,7 +34,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '87%-90% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  499.00, 
-            'psu_image_path' => 'images/psu/psu2.jpg',
+            'psu_image_path' => 'psu2.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -46,7 +46,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '90% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  499.00, 
-            'psu_image_path' => 'images/psu/psu3.jpg',
+            'psu_image_path' => 'psu3.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -58,7 +58,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '91%-93% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  459.00, 
-            'psu_image_path' => 'images/psu/psu4.jpg',
+            'psu_image_path' => 'psu4.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -70,7 +70,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '88%-92% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  459.00, 
-            'psu_image_path' => 'images/psu/psu5.jpg',
+            'psu_image_path' => 'psu5.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -82,7 +82,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '85%-88% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  319.00, 
-            'psu_image_path' => 'images/psu/psu6.jpg',
+            'psu_image_path' => 'psu6.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -94,7 +94,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '91% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Gold',
             'psu_price' =>  319.00, 
-            'psu_image_path' => 'images/psu/psu7.jpg',
+            'psu_image_path' => 'psu7.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -106,7 +106,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '87% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => 'Nie certyfikowany',
             'psu_price' => 319.00, 
-            'psu_image_path' => 'images/psu/psu8.jpg',
+            'psu_image_path' => 'psu8.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -118,7 +118,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '88% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  299.00, 
-            'psu_image_path' => 'images/psu/psu9.jpg',
+            'psu_image_path' => 'psu9.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -130,7 +130,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '82%-85% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  299.00, 
-            'psu_image_path' => 'images/psu/psu10.jpg',
+            'psu_image_path' => 'psu10.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -142,7 +142,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '88% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  299.00, 
-            'psu_image_path' => 'images/psu/psu11.jpg',
+            'psu_image_path' => 'psu11.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -154,7 +154,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '85% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  299.00, 
-            'psu_image_path' => 'images/psu/psu12.jpg',
+            'psu_image_path' => 'psu12.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -166,7 +166,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '88% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Silver',
             'psu_price' =>  299.00, 
-            'psu_image_path' => 'images/psu/psu13.jpg',
+            'psu_image_path' => 'psu13.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -178,7 +178,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '85% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' => 289.00, 
-            'psu_image_path' => 'images/psu/psu14.jpg',
+            'psu_image_path' => 'psu14.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -190,7 +190,7 @@ class PsuDataSeeder extends Seeder
             'psu_efficiency' => '86% przy 230V oraz 20-100% obciążeniu',
             'psu_certificate' => '80 PLUS Bronze',
             'psu_price' =>  269.00, 
-            'psu_image_path' => 'images/psu/psu15.jpg',
+            'psu_image_path' => 'psu15.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

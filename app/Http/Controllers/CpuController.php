@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cpus;
+use Illuminate\Support\Facades\Storage;
 
 class CpuController extends Controller
 {
@@ -42,8 +43,13 @@ class CpuController extends Controller
             'cpu_cores'=>$request->cpu_cores,
             'cpu_graphics'=>$request->cpu_graphics,
             'cpu_price'=>(float)$request->cpu_price,
-            'cpu_image_path'=>$request->cpu_image_path,
         ];
+        
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/cpu'), $imageName);
+        $data['cpu_image_path'] = $imageName;
+
         Cpus::create($data);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do bazy!');
     }
@@ -75,8 +81,12 @@ class CpuController extends Controller
             'cpu_price' => (float) $request->input('cpu_price'),
         ];
 
-        $cpu->update($data);
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/cpu'), $imageName);
+        $data['cpu_image_path'] = $imageName;
 
+        $cpu->update($data);
         return redirect('/')->with('success', 'CPU został zaktualizowany!');
     }
 

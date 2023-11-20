@@ -2,7 +2,7 @@
     <div class='item'>
         <div class='name'>{{ $gpu->gpu_fullname }}
         <br>    
-        <img src='{{ $gpu->gpu_image_path }}' alt='gpus' class='image'>
+        <img src='{{asset("images/gpu/" . $gpu->gpu_image_path)}}' alt='Gpus' class='image'>
         </div>
         <div class='connector'>{{ $gpu->gpu_connector }}</div>
         <div class='memory'>{{ $gpu->gpu_memory }}</div>

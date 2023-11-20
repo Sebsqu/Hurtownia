@@ -2,7 +2,7 @@
     <div class='item'>
         <div class='name'>{{ $disk->disk_fullname }}
         <br>    
-        <img src='{{ $disk->disk_image_path }}' alt='disks' class='image'>
+        <img src='{{asset("images/disk/" . $disk->disk_image_path)}}' alt='Disks' class='image'>
         </div>
         <div class='capacity'>{{ $disk->disk_capacity }}</div>
         <div class='interface'>{{ $disk->disk_interface }}</div>

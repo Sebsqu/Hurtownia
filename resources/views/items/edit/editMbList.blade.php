@@ -4,7 +4,7 @@
 </head>
 <div class="container col-md-4">
     <h1>Edytuj płytę główną</h1>
-    <form action="{{ route('mbs.update', ['id' => $mb->id]) }}" method="POST">
+    <form action="{{ route('mbs.update', ['id' => $mb->id]) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
@@ -13,10 +13,6 @@
             <input type="text" name="mb_fullname" id="mb_fullname" value="{{ $mb->mb_fullname }}" class="form-control mb-2">
         </div>
 
-        <div class="form-group">
-            <label for="mb_image_path">Ścieżka obrazu:</label>
-            <input type="text" name="mb_image_path" id="mb_image_path" value="{{ $mb->mb_image_path }}" class="form-control mb-2">
-        </div>
 
         <div class="form-group">
             <label for="mb_format">Format:</label>
@@ -41,6 +37,11 @@
         <div class="form-group">
             <label for="mb_price">Cena:</label>
             <input type="text" name="mb_price" id="mb_price" value="{{ $mb->mb_price }}" class="form-control mb-2">
+        </div>
+
+        <div class="form-group">
+            <label for="image">Dodaj obrazek:</label><br>
+            <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
         </div>
 
         <button type="submit" class="btn btn-primary">Zapisz zmiany</button>

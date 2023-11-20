@@ -1,7 +1,7 @@
 @foreach($rams as $ram)
 <div class='item'>
     <div class='name'>{{ $ram->ram_fullname }}</div>
-    <img src='{{ $ram->ram_image_path }}' alt='Pamięć RAM' class='image'>
+    <img src='{{asset("images/ram/" . $ram->ram_image_path)}}' alt='Rams' class='image'>
     <div class='type_of_memory'>Typ pamięci: {{ $ram->ram_type_of_memory }}</div>
     <div class='total_capacity'>Pojemność ogólna: {{ $ram->ram_total_capacity }}</div>
     <div class='capacity'>Pojemność pojedynczej kości: {{ $ram->ram_capacity }}</div>

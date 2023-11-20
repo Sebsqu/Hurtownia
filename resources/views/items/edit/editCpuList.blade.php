@@ -4,18 +4,13 @@
 </head>
 <div class="container col-md-4">
     <h1>Edytuj CPU</h1>
-    <form action="{{ route('cpus.update', ['id' => $cpu->id]) }}" method="POST">
+    <form action="{{ route('cpus.update', ['id' => $cpu->id]) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
         <div class="form-group">
             <label for="cpu_fullname">Nazwa:</label>
             <input type="text" name="cpu_fullname" id="cpu_fullname" value="{{ $cpu->cpu_fullname }}" class="form-control mb-2">
-        </div>
-
-        <div class="form-group">
-            <label for="cpu_image_path">Ścieżka obrazu:</label>
-            <input type="text" name="cpu_image_path" id="cpu_image_path" value="{{ $cpu->cpu_image_path }}" class="form-control mb-2">
         </div>
 
         <div class="form-group">
@@ -46,6 +41,11 @@
         <div class="form-group">
             <label for="cpu_price">Cena:</label>
             <input type="text" name="cpu_price" id="cpu_price" value="{{ $cpu->cpu_price }}" class="form-control mb-2">
+        </div>
+
+        <div class="form-group">
+            <label for="image">Dodaj obrazek:</label><br>
+            <input type="file" name="image" accept="image/jpeg,image/jpg,image/png"><br><br>
         </div>
 
         <button type="submit" class="btn btn-primary">Zapisz zmiany</button>

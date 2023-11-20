@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Mbs;
+use Illuminate\Support\Facades\Storage;
 
 class MbController extends Controller
 {
@@ -42,6 +43,12 @@ class MbController extends Controller
             'mb_price'=>(float)$request->mb_price,
             'mb_image_path'=>$request->mb_image_path,
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/mb'), $imageName);
+        $data['mb_image_path'] = $imageName;
+
         Mbs::create($data);
         return redirect()->back()->with('success', 'Produkt został pomyślnie dodany do bazy!');
     }
@@ -71,6 +78,11 @@ class MbController extends Controller
             'mb_price' => (float) $request->input('mb_price'),
             'mb_image_path' => $request->input('mb_image_path'),
         ];
+
+        $image = $request->file('image') ?? null;
+        $imageName = $image ? time() . '.' . $image->getClientOriginalExtension() : null;
+        $imageName && $image->move(public_path('images/mb'), $imageName);
+        $data['mb_image_path'] = $imageName;
 
         $mb->update($data);
         return redirect('/')->with('success', 'Płyta główna została zaktualizowana!');
