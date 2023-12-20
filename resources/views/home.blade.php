@@ -7,6 +7,7 @@
                 <button class="btn btn-primary" id="addItems">Dodaj przedmioty</button>
                 <button class="btn btn-primary" id="editItemsShow">Edytuj przedmioty</button>
                 <button class="btn btn-primary" id="adminIndex">Wyświetl użytkowników</button>
+                <br><br>
                 <div id="itemsContainer"></div>
             </div>
         </div>

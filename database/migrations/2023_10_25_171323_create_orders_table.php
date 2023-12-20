@@ -20,7 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string('payment_method');
             $table->timestamps();
 
-            $table->foreign('id_user')->references('id')->on('users');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
